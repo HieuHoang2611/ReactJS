@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread values</title>
+  </head>
+
+  <body>
+    <script>
+      //Đếm số ký tự của một chuỗi: “lazy dog jumps over brown fox”
+      let greetings = "lazy dog humps over brown fox";
+      let chars = [...greetings];
+      console.log(chars.length);
+      //Nối 2 mảng dữ liệu thành mảng mới.
+      let blog1Subscribers = ["billy@example.com", "sally@gmail.com"];
+      let blog2Subscribers = [
+        "timmy@gmail.com",
+        "tammy@example.com",
+        "tommy@gmail.com",
+      ];
+      let subscribers = [...blog1Subscribers, ...blog2Subscribers];
+      console.log(subscribers);
+      //Copy 2 mảng dữ liệu
+      let students = ["John", "Sofia", "Bob"];
+      let copy_students = students;
+      console.log(copy_students);
+      copy_students.push("Sally"); // Change students
+      console.log(copy_students);
+    </script>
+  </body>
+</html>

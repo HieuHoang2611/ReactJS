@@ -1,0 +1,280 @@
+/*----------------------------------------------------------------
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+td{
+  font-family: 'Times New Roman', sans-serif;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+ 
+tr:nth-child(even) {
+  background-color: rgb(156, 146, 146);
+}
+*/
+/*----------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+ 
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+///* Customize type and color 
+.customizing {
+  margin-top: 80px;
+  color: white;
+  display: flex;
+  gap: 12px;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+
+}
+ 
+.card {
+  height: 500px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ 
+///* Có thể hiểu đơn giản đây là một dạng khai báo biến nâng cao trong CSS, chưa support hết các trình duyệt 
+///* https://developer.mozilla.org/en-US/docs/Web/CSS/@property 
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% { --rotate: 0deg; }
+  100% { --rotate: 360deg; }
+}
+
+///* Magic Card 
+.card-animation {
+  background: #191c29;
+  height: 500px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-animation::before {
+  content: "";
+  width: 106%;
+  height: 104%;
+  top: -2%;
+  left: -3%;
+  border-radius: 8px;
+  position: absolute;
+  z-index: -1;
+  animation: spin 1.5s linear infinite;
+  background-image: linear-gradient(var(--rotate), #81ecec, #00b894 48%);
+}
+
+.card-animation::after {
+  position: absolute;
+  content: "";
+  top: calc(450px / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 1;
+  transition: opacity .5s;
+  transform: scale(.8);
+  filter: blur(calc(450px / 6));
+  animation: spin 1.5s linear infinite;
+  background-image: linear-gradient(var(--rotate), #81ecec, #00b894 48%);
+}
+
+.card--header {
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: url('https://tophinhanhdep.com/wp-content/uploads/2021/10/Purple-Night-Sky-Wallpapers.jpg');
+}
+.avatar {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  top: 140px;
+  left: 140px;
+  display: block;
+  margin:auto;
+}
+
+.card--body {
+  height: 245px;
+  padding: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ 
+.text-header {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ 
+.text-sub {
+  font-size: 16px;
+  line-height: 1.5;
+}
+ 
+.btn {
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2em;
+  text-align: center;
+  font-weight: 700;
+}
+.btn:hover {
+  border-color: #f7f1e3;
+}
+*/
+/* -------------- */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#bg{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+} 
+
+
+.container {
+  height: 100vh;
+  color: white;
+}
+ 
+.form-signin {
+  height: 800px;
+  width: 500px;
+  padding: 15px;
+  margin: auto;
+  box-shadow: rgba(6, 6, 7, 0.2) 0px 7px 29px 0px;
+  background-image: linear-gradient(0,#cc2b5e,#753a88);
+  opacity: 0.8;
+  border-radius: 5%;
+}
+.form-signin .icon{
+  margin-top: 120px;
+}
+.form-signin .icon:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-floating {
+  color: black;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+ 
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+ 
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin .btn-lg{
+  color: aliceblue;
+  margin: auto;
+  min-width: 120px;
+  background-color: #983c96;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form-signin .btn-lg:hover{
+  background-color: #983c96;
+  cursor: pointer;
+
+}

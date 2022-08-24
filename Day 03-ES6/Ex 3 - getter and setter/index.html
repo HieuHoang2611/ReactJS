@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person</title>
+</head>
+
+<body>
+    <script>
+        // Create an object:
+        class Person {
+            constructor(name){
+                this.name = name;
+            }
+            get fullName(){
+                return this.name
+            }
+            set fullName(name){
+                this.name = name;
+            }
+            Walk = () => console.log('Đi bộ')
+        }
+        class Programmer extends Person{
+            constructor(name, languageCode){
+                super(name);
+                this.languageCode = languageCode;
+            }
+            get Code(){
+                return this.languageCode
+            }
+            set Code(languageCode){
+                this.languageCode = languageCode;
+            }
+            static showCode(x){
+                console.log('Lập trình viên ' + x.name + ' code bằng ngôn ngữ ' + x.languageCode)
+            }
+        }
+        // Set an object property using a setter: person.lang = "en";
+        var x = new Programmer('','JS')
+        console.log(x);
+        console.log(x.fullName);
+        x.fullName= 'Hiếu dz'
+        console.log(x.fullName);
+        Programmer.showCode(x)
+        x.Walk()
+    </script>
+</body>
+
+</html>

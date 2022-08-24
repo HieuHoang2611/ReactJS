@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Openweather </title>
+    <style>
+        .containers {
+            text-align: center;
+            text-size-adjust: 500;
+        }
+        /* .title  {
+            color: red;
+        } */
+    </style>>
+</head>
+<body>
+    <div class="containers">
+            <h1 class="title">Dự báo thời tiết</h1>
+            <input type="text" placeholder="Enter your location" onkeyup="inputValue(this)">
+            <button id="btnSearch" value="Search" onclick="openSearch()">Tìm kiếm</button>
+        <div id="result">
+
+        </div>
+    </div>
+    
+    <script>
+        let result = document.getElementById("result");
+        let localtion;
+        url = 'https://api.openweathermap.org/data/2.5/weather'
+
+        function inputValue(obj){
+            localtion = obj.value
+        }
+
+        function openSearch(){
+            axios.get(url,{
+                params:{
+                    q : localtion,
+                    appid : '0f4a06e17e826310ef816400e9b9d313',
+                    lang : 'vi'
+                }})
+            .then(function (response) {
+                console.log(response.data)
+                result.innerHTML=`
+                <div class="col">
+                    <div class="card">
+                        <h5>Thời tiết ${response.data.name} hôm nay</h5>
+                        <img src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png"/>
+                            <div>
+                                <h3>Nhiệt độ hiện tại: ${(response.data.main.temp - 273.15).toFixed(2)} &#8451;</h3>
+                                <h3>Bầu trời : ${response.data.weather[0].description}</h3>
+                            </div>    
+                                
+                  `
+        })
+            .catch(function (err) {
+                result.innerHTML='<p>Không tìm thấy địa điểm</p>'
+            });
+        }
+
+
+        </script>
+</body>
+</html>

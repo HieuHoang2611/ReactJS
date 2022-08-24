@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>static</title>
+  </head>
+
+  <body>
+    <script>
+        class Infomation {
+            constructor (name, desc){
+                this.name = name;
+                this.desc = desc;
+            }
+        static calNumberx3 = (a = 1) => console.log(a*3);
+        }
+        class Geometry extends Infomation{
+            constructor (name, desc, width){
+                super(name,desc);
+                this.width = width;
+            }
+        static calNumber = (a) => console.log(a)    
+        }
+        Infomation.calNumberx3()
+        Geometry.calNumber(10)
+        var x = new Geometry('Hiếu','xxx',20)
+        console.log(x.name)
+</script>
+  </body>
+</html>
