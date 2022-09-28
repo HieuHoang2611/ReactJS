@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "My book",
+      "author": "Atoni",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "birthday": "1998-01-01"
+    },
+    {
+      "id": "2",
+      "name": "Atoni",
+      "birthday": "1998-08-11"
+    }
+  ]
+}
