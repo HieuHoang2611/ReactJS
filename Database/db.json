@@ -29,5 +29,66 @@
       "name": "Atoni",
       "birthday": "1998-08-11"
     }
+  ],
+  "users": [
+    {
+      "name": "Hieudzvl",
+      "id": 3
+    },
+    {
+      "name": "hieuvippro",
+      "id": 4
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Article 1",
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "title": "Article 2",
+      "user_id": 2
+    }
+  ],
+
+  "userinfo":[
+    {
+      "name": "Bret",
+      "email": "Sincere@april.biz",
+      "website": "hildegard.org",
+      "id"  : 0
+    },
+    {
+      "name": "Antonette",
+      "email": "Shanna@melissa.tv",
+      "website": "anastasia.net",
+      "id"  : 1
+    },
+    {
+      "name": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "website": "ramiro.info",
+      "id"  : 2
+    },
+    {
+      "name": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "website": "kale.biz",
+      "id"  : 3
+    },
+    {
+      "name": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "website": "demarco.info",
+      "id"  : 4
+    },
+    {
+      "name": "Leopoldo_Corkery",
+      "email": "Karley_Dach@jasper.info",
+      "website": "ola.org",
+      "id"  : 5
+    }
   ]
 }
