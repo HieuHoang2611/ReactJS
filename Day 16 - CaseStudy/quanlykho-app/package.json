@@ -1,0 +1,33 @@
+{
+  "name": "quanlykho-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.5",
+    "@react-pdf/renderer": "^3.0.0",
+    "assert": "^2.0.0",
+    "axios": "^1.1.2",
+    "bootstrap": "^5.2.2",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "formik": "^2.2.9",
+    "next": "12.3.1",
+    "process": "^0.11.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-pdf": "^5.7.2",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1"
+  }
+}

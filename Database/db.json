@@ -52,43 +52,210 @@
       "user_id": 2
     }
   ],
-
-  "userinfo":[
+  "userinfo": [
     {
       "name": "Bret",
       "email": "Sincere@april.biz",
       "website": "hildegard.org",
-      "id"  : 0
+      "id": 0
     },
     {
       "name": "Antonette",
       "email": "Shanna@melissa.tv",
       "website": "anastasia.net",
-      "id"  : 1
+      "id": 1
     },
     {
       "name": "Samantha",
       "email": "Nathan@yesenia.net",
       "website": "ramiro.info",
-      "id"  : 2
+      "id": 2
     },
     {
       "name": "Karianne",
       "email": "Julianne.OConner@kory.org",
       "website": "kale.biz",
-      "id"  : 3
+      "id": 3
     },
     {
       "name": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
       "website": "demarco.info",
-      "id"  : 4
+      "id": 4
     },
     {
       "name": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
       "website": "ola.org",
-      "id"  : 5
+      "id": 5
+    }
+  ],
+  "dmloaivt": [
+    {
+      "ma_loai": "21",
+      "ten_loai": "Vật tư",
+      "ten_loai2": "Raw Material",
+      "status": 1,
+      "id": 1
+    },
+    {
+      "ma_loai": "31",
+      "ten_loai": "CCLĐ",
+      "ten_loai2": "Instrument and Tool",
+      "status": 1,
+      "id": 1
+    },
+    {
+      "ma_loai": "41",
+      "ten_loai": "Bán thành phẩm",
+      "ten_loai2": "Semi-finished goods",
+      "status": 1,
+      "id": 1
+    },
+    {
+      "ma_loai": "51",
+      "ten_loai": "Thành phẩm",
+      "ten_loai2": "Finished goods",
+      "status": 1,
+      "id": 1
+    },
+    {
+      "ma_loai": "61",
+      "ten_loai": "Hàng hóa",
+      "ten_loai2": "Good",
+      "status": 1,
+      "id": 1
+    }
+  ],
+  "dmvt": [
+    {
+      "ma_vt": "S10DA021",
+      "ten_vt": "Đại táo",
+      "ten_vt2": "Đại táo",
+      "loai_vt": 21,
+      "status": 1,
+      "image": "dai-tao.jpg",
+      "id": 1
+    },
+    {
+      "ma_vt": "S10DA022",
+      "ten_vt": "Bạch truật",
+      "ten_vt2": "Bạch truật",
+      "loai_vt": 21,
+      "status": 1,
+      "image": "bach-truat.jpg",
+      "id": 2
+    },
+    {
+      "ma_vt": "S10BA004",
+      "ten_vt": "Phục linh (Bạch linh, Bạch phục linh)",
+      "ten_vt2": "Phục linh (Bạch linh, Bạch phục linh)",
+      "loai_vt": 51,
+      "status": 1,
+      "image": "bach-phuc-linh.jpg",
+      "id": 3
+    },
+    {
+      "ma_vt": "S80DG037",
+      "ten_vt": "Dầu gội dược liệu Thái Dương 7 Plus (Chai 250ml)",
+      "ten_vt2": "Dầu gội dược liệu Thái Dương 7 Plus (Chai 250ml)",
+      "loai_vt": 61,
+      "status": 1,
+      "image": "dau-goi-duoc-lieu-thai-duong-7-200ml-s1.jpg",
+      "id": 4
+    },
+    {
+      "ma_vt": "MTS001",
+      "ten_vt": "Mộc thảo ",
+      "ten_vt2": "Mộc thảo",
+      "loai_vt": "21",
+      "image": "moc-thao.jpg",
+      "id": 5
+    }
+  ],
+  "dmkho": [
+    {
+      "ma_kho": "KHO01",
+      "ten_kho": "Kho Hà Nội",
+      "ten_kho2": "",
+      "status": 1,
+      "id": 1
+    },
+    {
+      "ma_kho": "KHO02",
+      "ten_kho": "Kho Sài Gòn",
+      "ten_kho2": "",
+      "status": 1,
+      "id": 2
+    }
+  ],
+  "nhapkho": [
+    {
+      "so_phieu": 1,
+      "ma_ct": "NK1",
+      "ngay_lap_phieu": "2020-10-10",
+      "ma_vt": "S80DG037",
+      "ma_kho": "KHO02",
+      "so_luong": 5,
+      "don_gia": 1000,
+      "t_tien": 5000,
+      "id": 1
+    },
+    {
+      "so_phieu": 2,
+      "ma_ct": "NK1",
+      "ngay_lap_phieu": "2020-10-11",
+      "ma_vt": "S10BA004",
+      "ma_kho": "KHO01",
+      "so_luong": 10,
+      "don_gia": 700,
+      "t_tien": 7000,
+      "id": 2
+    }
+  ],
+  "xuatkho": [
+    {
+      "so_phieu": 1,
+      "ma_ct": "XK1",
+      "ngay_lap_phieu": "2020-11-01",
+      "ma_vt": "S80DG037",
+      "ma_kho": "KHO02",
+      "so_luong": 2,
+      "don_gia": 10000,
+      "t_tien": 20000,
+      "id": 1
+    }
+  ],
+  "r70": [
+    {
+      "so_phieu": 1,
+      "ngay_lap_phieu": "2020-10-10",
+      "ma_ct": "NK1",
+      "ma_vt": "S80DG037",
+      "ma_kho": "KHO02",
+      "so_luong": 5,
+      "t_tien": 5000,
+      "id": 1
+    },
+    {
+      "so_phieu": 2,
+      "ngay_lap_phieu": "2020-10-11",
+      "ma_ct": "NK1",
+      "ma_vt": "S10BA004",
+      "ma_kho": "KHO01",
+      "so_luong": 10,
+      "t_tien": 7000,
+      "id": 2
+    },
+    {
+      "so_phieu": 1,
+      "ngay_lap_phieu": "2020-11-01",
+      "ma_ct": "XK1",
+      "ma_vt": "S80DG037",
+      "ma_kho": "KHO02",
+      "so_luong": 2,
+      "t_tien": 20000,
+      "id": 3
     }
   ]
 }
