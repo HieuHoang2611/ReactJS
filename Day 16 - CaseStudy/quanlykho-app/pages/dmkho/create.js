@@ -1,43 +1,39 @@
 import axios from "axios";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
+import Layout from "../../components/layout";
 
 export default function HomeIndex() {
     const router = useRouter();
     const query = router.query;
     const id = query.id;
-    const [user, setUser] = useState({
-        "name": ""
-      })
-
-    // useEffect(() => {
-    //     axios.get('http://localhost:3001/users/' + id)
-    //         .then(res => {
-    //             console.log(res);
-    //             setUser(res.data);
-    //         })
-    //         .catch(err => { console.log(err); });
-    // }, [id])
-    // // console.log(query.id);
+    const [site, setSite] = useState({})
 
     const handleChange = (e) => {
-        setUser({ ...user, [e.target.name]: e.target.value });
+        setSite({ ...site, [e.target.name]: e.target.value });
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/users/', user)
+        axios.post('http://localhost:3001/dmkho/', site)
             .then(response => {
-                router.push('/users');
+                router.push('/dmkho');
             })
             .catch(err => { console.log(err); });
     }
     return (
         <div>
+        <Layout>
             <form onSubmit={handleSubmit}>
-                <input name="name" type="text" value={user.name || ''} onChange={handleChange}></input>
-                <input type="submit" value="Submit"></input>
+                <label>Mã kho</label>
+                <input name="ma_kho" required type="text" value={site.ma_kho || ''} onChange={handleChange}></input><br/>
+                <label>Tên kho</label>
+                <input name="ten_kho" required type="text" value={site.ten_kho || ''} onChange={handleChange}></input><br/>
+                <label>Tên khác</label>
+                <input name="ten_kho2" type="text" value={site.ten_kho2 || ''} onChange={handleChange}></input><br/>
+                <input type="submit" value="Lưu"></input>
             </form>
-        </div>
+        </Layout>
+    </div>
     )
 }

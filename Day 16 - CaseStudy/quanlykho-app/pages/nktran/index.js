@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Layout from "../../components/layout";
 import axios from 'axios';
 import Link from "next/link";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function stockin(){
 
@@ -33,7 +34,7 @@ export default function stockin(){
                 <div className="mt-5">
                     <div className="d-flex justify-content-between">
                     <h2>Phiếu nhập kho</h2>
-                    <Link href='/nhapkho/create'>
+                    <Link href='/nktran/create'>
                         <button className="btn btn-success mx-2">Thêm mới</button>
                     </Link>
                     </div>
@@ -62,11 +63,11 @@ export default function stockin(){
                                         <td>{stock.t_tien}</td>
                                         <td>
                                             <Link href={{
-                                                pathname: 'nhapkho/edit/' + stock.id
+                                                pathname: 'nktran/edit/' + stock.id
                                             }}>
-                                                <button className="btn btn-secondary mx-2">Sửa</button>
+                                                     <button className="btn btn-secondary mx-2" title="Show"><i class="bi bi-eye-fill"></i></button>
                                             </Link>
-                                            <button className="btn btn-warning mx-2" onClick={()=>handleDelete(index)}>Xóa</button>
+                                            {/* <button className="btn btn-warning mx-2" title="Delete" onClick={()=>handleDelete(stock.id)}><i class="bi bi-trash"></i></button> */}
                                         </td>
                                     </tr>
                                 ))

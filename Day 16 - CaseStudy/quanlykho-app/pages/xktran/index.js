@@ -33,7 +33,7 @@ export default function stockout(){
                 <div className="mt-5">
                     <div className="d-flex justify-content-between">
                     <h2>Phiếu xuất kho</h2>
-                    <Link href='/xuatkho/create'>
+                    <Link href='/xktran/create'>
                         <button className="btn btn-success mx-2">Thêm mới</button>
                     </Link>
                     </div>
@@ -62,11 +62,11 @@ export default function stockout(){
                                         <td>{stock.t_tien}</td>
                                         <td>
                                             <Link href={{
-                                                pathname: 'xuatkho/edit/' + stock.id
+                                                pathname: 'xktran/edit/' + stock.id
                                             }}>
-                                                <button className="btn btn-secondary mx-2">Sửa</button>
+                                                <button className="btn btn-secondary mx-2" title="Show"><i class="bi bi-eye-fill"></i></button>
                                             </Link>
-                                            <button className="btn btn-warning mx-2" onClick={()=>handleDelete(index)}>Xóa</button>
+                                            {/* <button className="btn btn-warning mx-2" title="Delete" onClick={()=>handleDelete(stock.id)}><i class="bi bi-trash"></i></button> */}
                                         </td>
                                     </tr>
                                 ))

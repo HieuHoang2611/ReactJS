@@ -38,9 +38,9 @@ export default function stock(){
         stock.map(function(stock,j) {
             if(stock.ma_vt == items[i][0])
                 if(stock.ma_ct == 'NK1')
-                    items[i][2] += stock.so_luong
+                    items[i][2] += Number(stock.so_luong)
                 else
-                    items[i][2] -= stock.so_luong
+                    items[i][2] -= Number(stock.so_luong)
                 })
     })
         // console.log(items);
